@@ -96,8 +96,8 @@ p {
 
     
 }
-
-button {
+/* button */
+.parallelogram {
     background-color: var(--bt-color);
     display: flex;
     align-items: center;
@@ -113,7 +113,7 @@ button {
 
 }
 
-button:hover{
+.parallelogram:hover{
     background-color: var(--H1-color);
     cursor: pointer;
     
@@ -123,6 +123,8 @@ button:hover{
 .parallelogram{
     transform: skew(-20deg);
 }
+
+
 
 /* @media (min-width: 400px) {
     main {
