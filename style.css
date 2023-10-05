@@ -22,10 +22,17 @@
 body {
     background: linear-gradient(154.76deg, #628E75 3%, #1A4855 84.12%);  
 
+
     font-family: var(--ff-texting);
     font-size: var(--fs-body);
     color: var(--fc-primary);
 
+    
+}
+
+.image-ghost{
+    position: absolute;
+    right:1.50rem;
     
 }
 
@@ -37,7 +44,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items: center;
     gap: 2.6rem;
 
     margin: 3rem;
@@ -91,7 +98,7 @@ button {
     transform: skew(-20deg);
 }
 
-@media (min-width: 400px) {
+/* @media (min-width: 400px) {
     main {
         display: flex;
     }
@@ -100,9 +107,9 @@ button {
         order: 1;
     }
 
-    .image {
+    .image-ghost {
         order: 2;
-        width: 500px;
+        width: 700px;
         height: 36.9rem;
     }
 
@@ -127,8 +134,8 @@ button {
 
     button {
         margin-top: 4.6rem;
-    }
+    } */
 
-}
+
 
 
