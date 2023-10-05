@@ -10,7 +10,9 @@
   --ff-texting: 'Poppins', sans-serif;
   
   --fc-primary: hsla(0, 0%, 98%, 1);
-  --bt-color:  hsla(145, 17%, 48%, 1);  
+  --bt-color:  hsla(145, 17%, 48%, 1);
+  --H1-color:  rgb(153, 170, 160);
+
 
   --fs-body: 1.6rem;
 
@@ -35,7 +37,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:flex-start;
     gap: 2.6rem;
 
     margin: 3rem;
@@ -44,7 +46,8 @@ header {
 header ul {
     list-style: none;
     display: flex;
-    gap: 2.6rem;
+    gap: 2.0rem;
+
 }
 
 h3 {
