@@ -7,12 +7,11 @@
 }
 
 :root {
-  --ff-texting: 'Poppins', sans-serif;
-  
-  --fc-primary: hsla(0, 0%, 98%, 1);
-  --bt-color:  hsla(145, 17%, 48%, 1);
-  --H1-color:  rgb(207, 222, 213);
+  --ff-texting: "Poppins", sans-serif;
 
+  --fc-primary: hsla(0, 0%, 98%, 1);
+  --bt-color: hsla(145, 17%, 48%, 1);
+  --H1-color: rgb(207, 222, 213);
 
   --fs-body: 1.6rem;
 
@@ -20,136 +19,113 @@
 }
 
 body {
-    background: linear-gradient(154.76deg, #628E75 3%, #1A4855 84.12%);  
+  background: linear-gradient(154.76deg, #628e75 3%, #1a4855 84.12%);
 
+  font-family: var(--ff-texting);
+  font-size: var(--fs-body);
+  color: var(--fc-primary);
 
-    font-family: var(--ff-texting);
-    font-size: var(--fs-body);
-    color: var(--fc-primary);
-
-    width: 100vw;
-    height: 100vh;
-    
+  width: 100vw;
+  height: 100vh;
 }
 
 .page {
-    margin: 0 auto;
-    padding: 2.5rem 10rem;
+  margin: 0 auto;
+  padding: 2.5rem 10rem;
 }
 
-.image-ghost{
-    position: absolute;
-    right:1.50rem;
-    
+.image-ghost {
+  position: absolute;
+  right: 1.5rem;
 }
-
-
-
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.6rem;
 
-    margin: 3rem;
+  margin: 3rem;
 }
 
 header ul {
-    list-style: none;
-    display: flex;
-    gap: 2.0rem;
-
-    
-
+  list-style: none;
+  display: flex;
+  gap: 2rem;
 }
 
-ul li{
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    cursor: pointer;
+ul li {
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
 }
 
-  
-ul li:hover{
-    transform:scale(1.25,1.25);
+ul li:hover {
+  transform: scale(1.25, 1.25);
 }
-  
- 
 
 h3 {
-    font-size: 2.0rem;
-    text-align: left;
+  font-size: 2rem;
+  text-align: left;
 
-    margin-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 h1 {
-    font-size: 5.6rem;
-    text-transform: uppercase;
-    text-align: left;
+  font-size: 5.6rem;
+  text-transform: uppercase;
+  text-align: left;
 
-    color: var(--H1-color);
+  color: var(--H1-color);
 }
 
 p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 
-    line-height: 2.9rem;
-    letter-spacing: 0.1rem;
-
-    
+  line-height: 2.9rem;
+  letter-spacing: 0.1rem;
 }
 /* button */
 .parallelogram {
-    background-color: var(--bt-color);
-    display: flex;
-    align-items: center;
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    text-transform: uppercase;
-    color: var(--fc-primary);
+  background-color: var(--bt-color);
+  display: flex;
+  align-items: center;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  text-transform: uppercase;
+  color: var(--fc-primary);
 
-    border: none;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
-    padding: 1.0rem;
-    margin-top: 2.0rem;
-
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
-.parallelogram:hover{
-    background-color: var(--H1-color);
-    cursor: pointer;
-    
-    transform:scale(0.9);
+.parallelogram:hover {
+  background-color: var(--H1-color);
+  cursor: pointer;
+
+  transform: scale(0.9);
 }
 
-.parallelogram{
-    transform: skew(-20deg);
+.parallelogram {
+  transform: skew(-20deg);
 }
-
 
 /* Animation */
-.image-ghost{
-    max-width: 640px;
+.image-ghost {
+  max-width: 640px;
+  transform: translateY(0px);
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
     transform: translateY(0px);
-    animation: float 5s ease-in-out infinite;
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
-
-@keyframes float{
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(-30px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-}
-
-
-
-
-
-
-
