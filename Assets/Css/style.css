@@ -45,6 +45,7 @@ body {
 
 
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -127,7 +128,24 @@ p {
 }
 
 
+/* Animation */
+.image-ghost{
+    max-width: 640px;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
 
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
 
 
 
