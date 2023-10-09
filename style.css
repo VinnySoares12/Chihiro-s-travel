@@ -32,16 +32,18 @@ body {
     
 }
 
+.page {
+    margin: 0 auto;
+    padding: 2.5rem 10rem;
+}
+
 .image-ghost{
     position: absolute;
     right:1.50rem;
     
 }
 
-.page {
-    margin: 0 auto;
-    padding: 2.5rem 10rem;
-}
+
 
 header {
     display: flex;
