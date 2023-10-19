@@ -12,6 +12,7 @@
   --fc-primary: hsla(0, 0%, 98%, 1);
   --bt-color: hsla(145, 17%, 48%, 1);
   --H1-color: rgb(207, 222, 213);
+  --Hover-color: rgba(158, 219, 144, 0.467);
 
   --fs-body: 1.6rem;
 
@@ -108,7 +109,6 @@ p {
 }
 .parallelogram a{
   display: flex;
-  justify-content: ;
   align-items: center;
   color: var(--fc-primary);
 
@@ -117,7 +117,7 @@ p {
 }
 
 .parallelogram:hover {
-  background-color: var(--H1-color);
+  background-color: var(--Hover-color);
   cursor: pointer;
 
   transform: scale(0.9);
