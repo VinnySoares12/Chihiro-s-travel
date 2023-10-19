@@ -19,7 +19,8 @@
 }
 
 body {
-  background: linear-gradient(154.76deg, #628e75 3%, #1a4855 84.12%);
+  background: linear-gradient(154.76deg, #52b8b6 3%, #204049 84.12%);
+  
 
   font-family: var(--ff-texting);
   font-size: var(--fs-body);
@@ -27,6 +28,7 @@ body {
 
   width: 100vw;
   height: 100vh;
+
 }
 
 .page {
@@ -37,6 +39,7 @@ body {
 .image-ghost {
   position: absolute;
   right: 1.5rem;
+  bottom: -9rem;
 }
 
 header {
@@ -79,8 +82,7 @@ h1 {
 }
 
 p {
-  font-size: 1.2rem;
-
+  font-size: 1.1rem;
   line-height: 2.9rem;
   letter-spacing: 0.1rem;
 }
@@ -113,7 +115,7 @@ p {
 
 /* Animation */
 .image-ghost {
-  max-width: 640px;
+  max-width: 700px;
   transform: translateY(0px);
   animation: float 5s ease-in-out infinite;
 }
