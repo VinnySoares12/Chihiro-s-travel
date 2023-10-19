@@ -111,6 +111,7 @@ p {
 .parallelogram a{
   display: flex;
   align-items: center;
+  column-gap: 0.8rem;
   color: var(--bt-text-color);
 
   text-decoration: none;
